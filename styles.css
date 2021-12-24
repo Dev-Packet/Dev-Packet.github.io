@@ -46,6 +46,10 @@
     margin: 0 auto;
 }
 
+.hgif{
+    text-align: center;
+}
+
 .h:hover{
     animation-name: rotate;
     animation-duration: 3s;
@@ -97,7 +101,7 @@ nav{
    padding: 5px 0;
    text-align: center;
    list-style-type: none;
-   
+
 }
 
 .downloads li a{
