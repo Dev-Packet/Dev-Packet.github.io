@@ -1,0 +1,209 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+  }
+
+.stikosekutilities{
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    border: 5px solid blue;
+    display:block;
+    align-self: center;
+    margin: 0 auto;
+}
+
+
+.stikosek{
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+
+.server{
+    height:400px;
+    margin: 0 10px;
+    display:block;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.h:hover{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.content{
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.background{
+    position:fixed;
+    overflow: hidden;
+    left:0;
+    right:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #3c4649 ;
+   
+      
+}
+
+.header{
+ height: 50px;
+ width: 100%;
+ padding: 0 5%;
+ background: #2d2f31;
+ opacity: 0.6;
+ position: relative;
+  
+}
+
+nav{
+   
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.downloads{
+   align-items: center;
+   padding: 5px 0;
+   text-align: center;
+   
+}
+
+.downloads li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    border: #23a86d 5px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 10px;
+    background-color: #23a86d;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.featuresul{
+    padding: 15px 0;
+    text-align: center;
+    list-style-type: square;
+}
+.featuresul li{
+    color: white;
+  
+}
+.spacer{
+    opacity: 0;
+}
+
+.logo{
+    width: 150px;
+    
+    
+}
+
+.download{
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.features{
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.navlinks{
+    padding: 15px 0;
+}
+
+.navlinks li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+.navlinks li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 0;
+    position: relative;
+}
+
+
+.navlinks li a::after{
+   content: "";
+   background: rgb(0, 0, 0);
+   width: 0;
+   height: 2px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transition: width 0.5s;
+}
+
+.navlinks li a:hover::after{
+    width: 100%;
+ }
+
+
+ .btn{
+    background: blue;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+h3{
+    padding: 0 10px;
+    color: white;
+    text-align: center; 
+}
+
+h1{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    z-index: 1;
+}
