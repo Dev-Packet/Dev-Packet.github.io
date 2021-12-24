@@ -48,6 +48,8 @@
 
 .hgif{
     text-align: center;
+    animation-name: opacity;
+    animation-duration: 2s;
 }
 
 .h:hover{
